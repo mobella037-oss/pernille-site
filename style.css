@@ -1,0 +1,40 @@
+
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color:#222; line-height:1.5; background:#f7f9fb; }
+
+.site-header { display:flex; align-items:center; justify-content:space-between; padding:0.8rem; background:#fff; border-bottom:1px solid #e6eef6; }
+.brand { display:flex; align-items:center; gap:0.75rem; }
+.logo { width:120px; height:auto; }
+.brand-text h1 { margin:0; font-size:1rem; }
+.brand-text .subtitle { margin:0; font-size:0.85rem; color:#666; }
+.main-nav a { margin-left:0.6rem; text-decoration:none; color:#080a0b; font-weight:600; font-size:0.95rem; }
+
+.hero { padding:1rem; }
+.hero img {
+  width:100%;
+  max-width:800px;
+  height:auto;
+  display:block;
+  margin:0 auto;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(8,35,65,0.06);
+}
+.hero-text { margin-top:0.8rem; }
+.hero-text h2 { margin:0 0 0.4rem 0; font-size:1.25rem; }
+.cta { display:inline-block; margin-top:0.6rem; padding:0.6rem 1rem; background:#671903; color:white; text-decoration:none; border-radius:8px; }
+
+.container { padding:1rem; }
+.profile-figure { max-width:320px; }
+.profile-figure img { width:100%; border-radius:8px; display:block; }
+
+.card-list { display:flex; flex-direction:column; gap:0.9rem; }
+.card { background:white; padding:0.9rem; border-radius:10px; box-shadow:0 6px 12px rgba(10,30,60,0.04); }
+
+.site-footer { padding:1rem; text-align:center; font-size:0.9rem; color:#9a9595; }
+
+@media (min-width:768px) {
+  .container { max-width:1000px; margin:0 auto; }
+  .card-list { flex-direction:row; }
+  .card { flex:1; }
+  .brand-text h1 { font-size:1.1rem; }
+}
